@@ -1,0 +1,10 @@
+http://localhost:6082/ectcnafterreport/getall
+
+http://localhost:6082/swagger-ui.html
+
+
+
+
+
+
+
