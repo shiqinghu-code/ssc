@@ -2,7 +2,7 @@ server:
   port: 6081
 spring:
   application:
-    name: microservicecloud-dept
+    name: service-hi
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: com.mysql.cj.jdbc.Driver

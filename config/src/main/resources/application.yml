@@ -1,0 +1,24 @@
+server:
+  port: 6086
+spring:
+  application:
+    name: service-config
+  cloud:
+     config:
+        server:
+          git:
+            uri: https://github.com/shiqinghu-code/config-only-a-demo.git
+            username: #####账号
+            password: #####密码
+            default-label: main
+            search-paths: config
+logging:
+  config: classpath:logback.xml
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6080/eureka/ #配置注册中心地址
+
+
+
+  

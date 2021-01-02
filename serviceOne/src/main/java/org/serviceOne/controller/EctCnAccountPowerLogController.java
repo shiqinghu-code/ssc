@@ -1,7 +1,10 @@
 package org.serviceOne.controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
+import org.serviceOne.common.Result;
 import org.serviceOne.entity.EctCnAccountPowerLog;
 import org.serviceOne.service.IEctCnAccountPowerLogService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +20,11 @@ public class EctCnAccountPowerLogController {
     IEctCnAccountPowerLogService ectCnAccountPowerLogService;
 
     @RequestMapping(value = "/getall", method = RequestMethod.GET)
-    public List<EctCnAccountPowerLog> getEctCnAccountPowerLogList() {
-        return ectCnAccountPowerLogService.findAll();
+    public  Result getEctCnAccountPowerLogList() {
+    	List<EctCnAccountPowerLog> list=ectCnAccountPowerLogService.findAll();
+    	Map<String,Object> map=new HashMap<String,Object>();
+    	map.put("list", list);
+    	map.put("service", "one");
+        return Result.success(map);
     }
 }

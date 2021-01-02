@@ -1,8 +1,8 @@
 server:
-  port: 6082
+  port: 6084
 spring:
   application:
-    name: service-hi
+    name: service-ribbon
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -61,6 +61,9 @@ eureka:
     service-url:
       defaultZone: http://localhost:6080/eureka/ #配置注册中心地址
   
+  
+  
+
   
   
   

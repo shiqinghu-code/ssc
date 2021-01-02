@@ -1,0 +1,11 @@
+http://localhost:6086/service-hi/release
+
+http://localhost:6086/service-hi.yml
+
+http://localhost:6086/service/hi/main
+
+http://localhost:6086/service-hi/dev/main
+
+
+
+

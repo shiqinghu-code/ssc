@@ -74,5 +74,9 @@
 		<module>eureka</module>
 		<module>serviceOne</module>
     <module>serviceTwo</module>
+    <module>serviceFeign</module>
+    <module>serviceRibbon</module>
+    <module>zuul</module>
+    <module>config</module>
   </modules>
 </project>

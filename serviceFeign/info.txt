@@ -1,0 +1,8 @@
+http://localhost:6083/hiController/getall
+
+
+
+
+
+
+

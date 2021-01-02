@@ -1,5 +1,8 @@
 server:
   port: 6080
+spring:
+  application:
+    name: eureka-server
 eureka:
   client:
     register-with-eureka: false #注册到Eureka的注册中心

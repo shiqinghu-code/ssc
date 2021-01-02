@@ -1,20 +1,16 @@
-package org.serviceTwo;
+package org.serviceFeign;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
-/**
- * Hello world!
- *
- */
-
-@EnableTransactionManagement
 @SpringBootApplication
 @EnableEurekaClient
-public class ServiceTwoApp {
+@EnableFeignClients
+public class ServiceFegnApp {
 	public static void main(String[] args) {
-		SpringApplication.run(ServiceTwoApp.class, args);
+		SpringApplication.run(ServiceFegnApp.class, args);
 	}
+
 }
